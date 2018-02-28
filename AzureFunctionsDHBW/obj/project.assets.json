@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
+      "Alexa.NET/1.4.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Alexa.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Alexa.NET.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.3": {
         "type": "package",
         "dependencies": {
@@ -1023,6 +1036,16 @@
     }
   },
   "libraries": {
+    "Alexa.NET/1.4.2": {
+      "sha512": "9l60n3eO+QZe/OLCd2jFTydMeoDiYjZDinlbBZOsmJrZKCTd9k+gsj6zQoB90LIrzr9ia6GEtheQnzE4Xd70gg==",
+      "type": "package",
+      "path": "alexa.net/1.4.2",
+      "files": [
+        "alexa.net.1.4.2.nupkg.sha512",
+        "alexa.net.nuspec",
+        "lib/netstandard1.6/Alexa.NET.dll"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.3": {
       "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
       "type": "package",
@@ -4102,11 +4125,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.1": [
+      "Alexa.NET >= 1.4.2",
       "Microsoft.NET.Sdk.Functions >= 1.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tobi\\.nuget\\packages\\": {},
+    "C:\\Users\\Endrit Callaki\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -4116,18 +4140,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tobi\\Documents\\Visual Studio 2017\\Projects\\AzureFunctions\\AzureFunctionsDHBW\\AzureFunctionsDHBW.csproj",
+      "projectUniqueName": "H:\\Github\\AzureFunctions\\AzureFunctionsDHBW\\AzureFunctionsDHBW.csproj",
       "projectName": "AzureFunctionsDHBW",
-      "projectPath": "C:\\Users\\Tobi\\Documents\\Visual Studio 2017\\Projects\\AzureFunctions\\AzureFunctionsDHBW\\AzureFunctionsDHBW.csproj",
-      "packagesPath": "C:\\Users\\Tobi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tobi\\Documents\\Visual Studio 2017\\Projects\\AzureFunctions\\AzureFunctionsDHBW\\obj\\",
+      "projectPath": "H:\\Github\\AzureFunctions\\AzureFunctionsDHBW\\AzureFunctionsDHBW.csproj",
+      "packagesPath": "C:\\Users\\Endrit Callaki\\.nuget\\packages\\",
+      "outputPath": "H:\\Github\\AzureFunctions\\AzureFunctionsDHBW\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Endrit Callaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -4152,6 +4176,10 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "Alexa.NET": {
+            "target": "Package",
+            "version": "[1.4.2, )"
+          },
           "Microsoft.NET.Sdk.Functions": {
             "target": "Package",
             "version": "[1.0.2, )"
